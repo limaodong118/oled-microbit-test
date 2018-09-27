@@ -368,8 +368,10 @@ namespace OLED12864_I2C {
      * test模式，true放大显示，false正常显示
      * @param d true zoom / false normal, eg: true
      */
-    //% blockId="OLED12864_I2C_ZOOM" block="test测试 %d"
-    //% weight=80 blockGap=8
+    //% help=led/toggle weight=77
+    //% blockId=device_led_toggle block="toggle|x %x|y %y" icon="\uf204" blockGap=8
+    //% parts="ledmatrix"
+    //% x.min=0 x.max=4 y.min=0 y.max=4
     export function test(d: boolean = true) {
         cmd1(0xAF)
     }
