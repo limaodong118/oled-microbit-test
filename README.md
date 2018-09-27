@@ -1,24 +1,5 @@
 # test-OLED 模块
 
-makecode 的 microbit 版 I2C 接口 OLED 128x64 显示模块软件包。  
-
-部分驱动代码来自 fizban99 的 microbit OLED 驱动:  
-https://github.com/fizban99/microbit_ssd1306
-
-作者: shaoziyang  
-时间: 2018年5月  
-
-![](https://raw.githubusercontent.com/microbit-makecode-packages/OLED12864_I2C_cn/master/icon.png)  
-  
-
-## 使用方法
-
-打开 makecode 编辑器，在项目中选择添加软件包，然后在地址栏输入下面网址  
-
-https://github.com/microbit-makecode-packages/OLED12864_I2C_cn  
-
-搜索后就可以添加并使用本软件包了。
-
 
 ## API
 
@@ -86,21 +67,3 @@ d: 模式
   - len, 线段长度
   - color, 显示颜色，可以是 1 或 0。
 
-## 演示
-
-![](https://raw.githubusercontent.com/microbit-makecode-packages/OLED12864_I2C_cn/master/demo.png)  
-
-
-
-## 授权方式
-
-MIT
-
-microbit/micropython 中文社区版权所有 (c) 2018  
-
-## 支持硬件
-
-* for PXT/microbit
-
-
-[来自 microbit/micropython 中文社区](http://www.micropython.org.cn)  
