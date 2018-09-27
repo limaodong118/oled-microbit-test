@@ -1,4 +1,4 @@
-# I2C 接口 OLED 128x64 模块
+# test-OLED 模块
 
 makecode 的 microbit 版 I2C 接口 OLED 128x64 显示模块软件包。  
 

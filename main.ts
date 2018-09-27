@@ -369,9 +369,9 @@ namespace OLED12864_I2C {
      * @param d true zoom / false normal, eg: true
      */
     //% blockId="OLED12864_I2C_ZOOM" block="test测试 %d"
-    //% weight=60 blockGap=8
+    //% weight=80 blockGap=8
     export function test(d: boolean = true) {
-
+        cmd1(0xAF)
     }
 
     /**
