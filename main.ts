@@ -4,7 +4,7 @@
 * http://www.micropython.org.cn
 */
 
-//% weight=100 color=#0855AA icon="O" block="OLED12864模块"
+//% weight=100 color=#0855AA icon="O" block="OLED12864test模块"
 namespace OLED12864_I2C {
     let font = [
         0x0022d422,
