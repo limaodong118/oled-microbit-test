@@ -305,66 +305,6 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * 屏幕内容反显。true反显，false正常显示
-     * @param d true: invert / false: normal, eg: true
-     */
-    //% blockId="OLED12864_I2C_INVERT" block="屏幕反显 %d"
-    //% weight=65 blockGap=8
-    export function invert(d: boolean = true) {
-        let n = (d) ? 0xA7 : 0xA6
-        cmd1(n)
-    }
-
-    /**
-     * 重新绘制屏幕的显示内容
-     */
-    //% blockId="OLED12864_I2C_DRAW" block="刷新显示"
-    //% weight=64 blockGap=8
-    export function draw() {
-        set_pos()
-        pins.i2cWriteBuffer(_I2CAddr, _screen)
-    }
-
-    /**
-     * 清除 OLED 模块的显示内容
-     */
-    //% blockId="OLED12864_I2C_CLEAR" block="清除显示内容"
-    //% weight=63 blockGap=8
-    export function clear() {
-        _screen.fill(0)
-        _screen[0] = 0x40
-        draw()
-    }
-
-    /**
-     * 打开 OLED 模块的屏幕显示
-     */
-    //% blockId="OLED12864_I2C_ON" block="显示打开"
-    //% weight=62 blockGap=8
-    export function on() {
-        cmd1(0xAF)
-    }
-
-    /**
-     * 关闭 OLED 模块的屏幕显示
-     */
-    //% blockId="OLED12864_I2C_OFF" block="显示关闭"
-    //% weight=61 blockGap=8
-    export function off() {
-        cmd1(0xAE)
-    }
-
-    /**
-     * 放大模式，true放大显示，false正常显示
-     * @param d true zoom / false normal, eg: true
-     */
-    //% blockId="OLED12864_I2C_ZOOM" block="放大模式 %d"
-    //% weight=60 blockGap=8
-    export function zoom(d: boolean = true) {
-        _ZOOM = (d) ? 1 : 0
-        cmd2(0xd6, _ZOOM)
-    }
-    /**
      * test模式，true放大显示，false正常显示
      * @param d true zoom / false normal, eg: true
      */
