@@ -364,6 +364,15 @@ namespace OLED12864_I2C {
         _ZOOM = (d) ? 1 : 0
         cmd2(0xd6, _ZOOM)
     }
+    /**
+     * test模式，true放大显示，false正常显示
+     * @param d true zoom / false normal, eg: true
+     */
+    //% blockId="OLED12864_I2C_ZOOM" block="test测试 %d"
+    //% weight=60 blockGap=8
+    export function test(d: boolean = true) {
+
+    }
 
     /**
      * OLED 初始化
