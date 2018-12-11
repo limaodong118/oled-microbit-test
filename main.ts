@@ -1,7 +1,8 @@
-/**
+OLED12864_I2C.init(60)/**
 * makecode I2C OLED 128x64 软件包.
 * From microbit/micropython Chinese community.
 * http://www.micropython.org.cn
+* df
 */
 
 //% weight=100 color=#0855AA icon="O" block="OLED12864test模块"
